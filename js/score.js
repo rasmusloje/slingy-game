@@ -9,6 +9,7 @@ function Score(){
   }
 
   this.update = function(){
+    textSize(32);
     text(this.score, 50, 70);
     fill(64,235,112);
   }
