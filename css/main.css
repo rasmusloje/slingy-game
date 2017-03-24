@@ -19,3 +19,18 @@ html, body {
 .titleWrapper {
     margin-bottom: 25px;
 }
+
+#appStore {
+    display: 'none';
+}
+
+#cover {
+    background: url("http://www.aveva.com/Images/ajax-loader.gif") no-repeat scroll center center #0b1011;
+    position: absolute;
+    height: 99%;
+    width: 99%;
+}
+
+#canvasHolder {
+    display: '';
+}

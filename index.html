@@ -9,22 +9,59 @@
   <script language="javascript" type="text/javascript" src="js/ball.js"></script>
   <script language="javascript" type="text/javascript" src="js/pipe.js"></script>
   <script language="javascript" type="text/javascript" src="js/score.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <!-- this line removes any default padding and style. you might only need one of these values set. -->
 </head>
 <body>
-  <div class = "main">
-    <div class = "gameWrapper">
-      <div class = "titleWrapper">
-        <img src="images/slingy.png" alt="Slingy Logo" height="60" width="260">
-      </div>
-      <div id="canvasHolder">
+  <div id="cover"></div>
+    <div class = "main">
+      <div class = "gameWrapper">
+        <div class = "titleWrapper">
+          <img src="images/slingy.png" alt="Slingy Logo" height="60" width="260">
+        </div>
+        <div id="canvasHolder"></div>
+        <div id="appStore">
+          <img src="images/app-store-logo.png" alt="Slingy Logo" height="90" width="300"><br><br>
+          <img src="images/google-play-badge.png" alt="Slingy Logo" height="90" width="300">
+        </div>
       </div>
     </div>
-  </div>
+  
 </body>
-
 <script>
+  var canvas = document.getElementById("canvasHolder");
+  var appstore = document.getElementById("appStore");
+
+  $(window).load(function(){
+    $('#cover').fadeOut(1000);
+
+  });
+
+  $( document ).ready(function() {
+    if ($(window).width() < 1280 || $(window).height() < 820) {
+      canvas.style.display = 'none';
+      appstore.style.display = '';
+    }
+    else{
+      canvas.style.display = '';
+      appstore.style.display = 'none';
+    }
+    
+  });
+
+  $(window).resize(function() {
+    if ($(window).width() < 1280 || $(window).height() < 820) {
+      canvas.style.display = 'none';
+      appstore.style.display = '';
+    }
+    else{
+      canvas.style.display = '';
+      appstore.style.display = 'none';
+    }
+  });
+
   // Initial setup function for the game
   function setup() {
     createCanvas(1280, 720).parent('#canvasHolder');
