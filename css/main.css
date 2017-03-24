@@ -2,3 +2,20 @@ body {
     text-align: center;
     background-color: #0b1011;
 }
+
+html, body {
+    height: 99%;
+}
+.main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.gameWrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+.titleWrapper {
+    margin-bottom: 25px;
+}

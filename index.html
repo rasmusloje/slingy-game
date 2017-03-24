@@ -13,5 +13,26 @@
   <!-- this line removes any default padding and style. you might only need one of these values set. -->
 </head>
 <body>
+  <div class = "main">
+    <div class = "gameWrapper">
+      <div class = "titleWrapper">
+        <img src="images/slingy.png" alt="Slingy Logo" height="60" width="260">
+      </div>
+      <div id="canvasHolder">
+      </div>
+    </div>
+  </div>
 </body>
+
+<script>
+  // Initial setup function for the game
+  function setup() {
+    createCanvas(1280, 720).parent('#canvasHolder');
+    ball = new Ball();
+    score = new Score();
+    pipes.push(new Pipe());
+  }
+</script>
+
+
 </html>

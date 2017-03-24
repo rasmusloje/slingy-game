@@ -7,13 +7,7 @@ var customFrameCounter = 1;
 
 var score;
 
-// Initial setup function for the game
-function setup() {
-  createCanvas(1280, 720);
-  ball = new Ball();
-  score = new Score();
-  pipes.push(new Pipe());
-}
+
 
 // Is executed at each render time (every fps)
 function draw() {
