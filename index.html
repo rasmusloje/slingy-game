@@ -31,18 +31,24 @@
   
 </body>
 <script>
+  // ID vars for canvas and app images
   var canvas = document.getElementById("canvasHolder");
   var appstore = document.getElementById("appStore");
 
+  // On complete load
   $(window).load(function(){
     $('#cover').fadeOut(1000);
-
-  });
-
-  $( document ).ready(function() {
     if ($(window).width() < 1280 || $(window).height() < 820) {
       canvas.style.display = 'none';
       appstore.style.display = '';
+    }
+  });
+
+  // On DOM load
+  $( document ).ready(function() {
+    if ($(window).width() < 1280 || $(window).height() < 820) {
+      canvas.style.display = '';
+      appstore.style.display = 'none';
     }
     else{
       canvas.style.display = '';
@@ -51,6 +57,7 @@
     
   });
 
+  // Resize listener of window
   $(window).resize(function() {
     if ($(window).width() < 1280 || $(window).height() < 820) {
       canvas.style.display = 'none';
