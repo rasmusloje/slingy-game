@@ -63,7 +63,7 @@ function draw() {
   }
   else{
     textSize(32);
-    text("Hold space to start!", width/2 - 137, height/2+100);
+    text("Hold space to start spinning the ball!", width/2 - 260, height/2 + 100);
   }
 
   // Update score at end to render on top of everything else
