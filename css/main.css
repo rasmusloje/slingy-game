@@ -6,11 +6,13 @@ body {
 html, body {
     height: 99%;
 }
+
 .main {
     height: 100%;
     width: 100%;
     display: table;
 }
+
 .gameWrapper {
     display: table-cell;
     height: 100%;
