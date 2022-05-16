@@ -19,4 +19,4 @@ The project has been implemented with javascript utilizing the library p5.js.
 - Endure as long as possible
 
 ## Example GIF
-![Example play](placeholder)
+![Example play](https://github.com/rasmusloje/slingy-game/blob/main/images/slingy-animation.gif)
