@@ -1,29 +1,13 @@
-# README #
+# Slingy Game
+Inspired by the game Flappy Bird with mechanical differences using ballistic curves.
 
-This README would normally document whatever steps are necessary to get your application up and running.
+## Project description
+One day going to bed I came up with an idea originating from Flappy Bird but instead having an object spinning while holding a button, and shooting the object out based on current position in the spin upon release.
 
-### What is this repository for? ###
+To achieve this, gravity and ballistic curves was necessary, as the object would have to drop in a physically realistic way depending on how it exits the spinning state.
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+The project has been implemented with javascript utilizing the library p5.js.
 
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+## How to Run the project
+- Clone the repository
+- Open `index.html` in any browser
