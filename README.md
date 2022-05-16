@@ -11,3 +11,12 @@ The project has been implemented with javascript utilizing the library p5.js.
 ## How to Run the project
 - Clone the repository
 - Open `index.html` in any browser
+
+## How to Play
+- Hold `space` to start spinning
+- Release `space` to shoot
+- Entering a gap in the procedural pipes results in 1 point
+- Endure as long as possible
+
+## Example GIF
+![Example play](placeholder)
