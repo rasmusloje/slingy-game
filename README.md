@@ -18,5 +18,5 @@ The project has been implemented with javascript utilizing the library p5.js.
 - Entering a gap in the procedural pipes results in 1 point
 - Endure as long as possible
 
-## Example GIF
-![Example play](https://github.com/rasmusloje/slingy-game/blob/main/images/slingy-animation.gif)
+## Gameplay
+![Example gameplay](https://github.com/rasmusloje/slingy-game/blob/main/images/slingy-animation.gif)
